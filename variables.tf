@@ -7,10 +7,17 @@
   # Name tags
 variable "name" {
   type = string
-  default = "eng48-harry-li-app"
+  default = "eng48-harry-li-terraform"
 }
-  # AMI
-variable "ami_python" {
+
+  # App AMI
+variable "app_ami_id" {
   type = string
-  default = "ami-0c796dc8f5acf4c08"
+  default = "ami-0d8e5cfe85e85b81b"
+}
+
+# Db AMI
+variable "db_ami_id" {
+  type = string
+  default = "ami-0c1c20912b942fb91"
 }
